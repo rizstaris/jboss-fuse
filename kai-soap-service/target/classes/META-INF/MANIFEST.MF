@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1472539116158
+Build-Jdk: 1.7.0_21
+Built-By: RIZST
+Bundle-ManifestVersion: 2
+Bundle-Name: kai-soap-service
+Bundle-SymbolicName: kai-soap-service
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.kai.workshop.model;uses:="javax.xml.bind.annotation"
+ ;version="0.0.1.SNAPSHOT",com.kai.workshop.service;uses:="com.kai.works
+ hop.model,javax.jws";version="0.0.1.SNAPSHOT"
+Import-Package: io.fabric8.cxf,javax.jws,javax.xml.bind.annotation,org.a
+ pache.cxf.interceptor.security;version="[3.0,4)",org.apache.cxf.jaxrs.s
+ ecurity;version="[3.0,4)",org.apache.karaf.jaas.boot.principal,org.ecli
+ pse.jetty.plus.jaas,org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Tool: Bnd-1.50.0
