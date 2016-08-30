@@ -25,7 +25,10 @@
              http://camel.apache.org/schema/blueprint/cxf http://camel.apache.org/schema/blueprint/cxf/camel-cxf.xsd
              http://camel.apache.org/schema/blueprint http://camel.apache.org/schema/blueprint/camel-blueprint.xsd">
              
-
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:camel="http://camel.apache.org/schema/spring" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
   <cxf:cxfEndpoint id="serviceWS"
                    address=""
                    serviceClass=""/>
@@ -33,5 +36,5 @@
   <camelContext xmlns="http://camel.apache.org/schema/blueprint">
  
   </camelContext>
-
+</beans>
 </blueprint>
